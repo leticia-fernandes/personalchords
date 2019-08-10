@@ -16,6 +16,13 @@
  @import 'bootstrap';
  @import "font-awesome";
  
+ @font-face {
+	font-family: 'Raleway';
+	src: url('/assets/Raleway-Regular.ttf');
+	font-family: 'Pacifico';
+	src: url('/assets/Pacifico-Regular.ttf');
+ }
+
 body {
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.1em;
@@ -34,14 +41,25 @@ body {
 		color: gray;
 		text-decoration: none;
 	}
+
+	.btn-light {
+		background-color: orange;
+		color: white;
+	}
 }
 
 #navbar {
+	
 	background-color: #fff !important;
 	padding-top: 5px !important;
 	color: orange;
 	font-family: 'Pacifico', cursive;
 	margin-bottom: 50px;
+
+	.navbar-toggler-icon {
+		font-size: 20px !important;
+		color: orange;
+	}
 
 	span {				
 			font-size: 2em;
