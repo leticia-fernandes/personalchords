@@ -1,0 +1,27 @@
+<div id="edit-song">
+  <div class="row">
+    <div class="col">
+      <h1>
+        <%= @song.title %> 
+        <span>
+          <%= link_to edit_song_path do %>
+            <%= fa_icon "pencil" %>
+          <% end %>
+          <%= link_to @song, method: :delete, data: { confirm: 'Are you sure?' } do %>
+            <%= fa_icon "trash" %>
+          <% end %>
+        </span>       
+      </h1>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="row">
+    <div class="col">
+      <p class="text-justify">
+        <%= @song.content %>
+      </p>
+    </div>
+  </div>
+</div>
