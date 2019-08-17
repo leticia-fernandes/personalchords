@@ -1,6 +1,11 @@
 <div class="row">
     <div class="col">
-        <h1>Edit Song</h1>
+        <h1>
+						<%= link_to @song, title: 'Back' do %>
+							<%= fa_icon "chevron-left" %>
+						<% end %>
+						Edit Song
+					</h1>
     </div>
 </div>
     
